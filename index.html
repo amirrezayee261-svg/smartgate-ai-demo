@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#10243a">
+<title>SmartGate AI | نمونه نمایشی</title>
+<style>
+:root{--navy:#10243a;--navy2:#173653;--teal:#0e9f91;--bg:#f3f6fa;--ink:#192b3d;--muted:#64758a;--line:#e1e8ef;--red:#b42318;--green:#087443;--shadow:0 10px 28px #10243a0d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.7}button,input,select{font:inherit}button{cursor:pointer}.shell{max-width:1120px;margin:auto;padding:18px}.hero{background:linear-gradient(120deg,var(--navy),#1c4960);color:white;border-radius:24px;padding:24px;position:relative;overflow:hidden;box-shadow:var(--shadow)}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:#ffffff17;display:grid;place-items:center;font-size:25px}.brand h1{font-size:clamp(23px,4vw,32px);margin:0}.brand p{margin:1px 0 0;color:#d3e3ed;font-size:13px}.hero-copy{max-width:760px;color:#e5eef5;margin:20px 0 0}.demo-banner{display:flex;align-items:flex-start;gap:8px;background:#fff3cf;color:#6f4b00;border:1px solid #f2df9a;border-radius:12px;padding:10px 13px;margin:14px 0;font-size:13px}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}.tab{border:1px solid var(--line);background:white;border-radius:13px;padding:12px 8px;color:var(--muted);font-weight:700}.tab.active{background:var(--navy);border-color:var(--navy);color:white}.panel{display:none}.panel.active{display:block}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow);margin-bottom:15px}.card h2{font-size:19px;margin:0 0 5px}.sub{color:var(--muted);font-size:13px;margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-weight:700;font-size:13px}.field input,.field select{width:100%;border:1px solid #cfd9e4;border-radius:11px;padding:12px;background:#fff;min-height:46px;color:var(--ink)}.field input:focus,.field select:focus{outline:3px solid #0e9f9125;border-color:var(--teal)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.btn{border:0;border-radius:11px;padding:11px 16px;font-weight:700}.primary{background:var(--teal);color:white}.secondary{background:#eaf0f5;color:var(--navy)}.danger{background:#fff0ef;color:var(--red);border:1px solid #ffd5d2}.btn:disabled{opacity:.5;cursor:not-allowed}.result{margin-top:15px;border:1px solid var(--line);border-radius:13px;padding:14px;background:#f8fafc;overflow-wrap:anywhere}.result.good{background:#effaf4;border-color:#b6e7ca}.result.bad{background:#fff5f4;border-color:#ffc8c2}.result.warn{background:#fff9e9;border-color:#f3dfa0}.hidden{display:none!important}.pill{display:inline-block;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:700;background:#e8eef4;color:#44566a}.pill.active{background:#dff7e8;color:#087443}.pill.inactive{background:#ffebe9;color:#b42318}.scanner-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.reader{min-height:190px;border:2px dashed #cbd8e4;border-radius:14px;display:grid;place-items:center;text-align:center;padding:18px;background:#f9fbfd}#reader{width:100%;overflow:hidden;border-radius:12px}#reader video{width:100%;object-fit:cover;border-radius:12px}#qrOutput{display:flex;justify-content:center;align-items:center;min-height:180px;background:white;border:1px dashed #d5e0e9;border-radius:12px;padding:12px;margin-top:12px}#qrOutput img,#qrOutput canvas{max-width:100%;height:auto!important}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px;min-width:500px}th,td{text-align:right;padding:11px;border-bottom:1px solid var(--line);white-space:nowrap}th{background:#f7f9fb;color:#586a7d;font-weight:700}.statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.stat{border:1px solid var(--line);border-radius:13px;padding:13px;background:#f8fafc}.stat b{display:block;font-size:23px;color:var(--navy)}.stat span{font-size:12px;color:var(--muted)}.small{font-size:12px;color:var(--muted)}.demo-codes{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.demo-code{border:1px solid var(--line);border-radius:9px;padding:7px 10px;background:#f8fafc;font-size:12px;direction:ltr}.footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0 6px}.inline{display:flex;gap:8px;align-items:center}.inline input{flex:1;min-width:0}.status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#0e9f91;margin-left:5px}
+@media(max-width:700px){.shell{padding:12px}.hero{padding:19px;border-radius:18px}.tabs{gap:5px}.tab{font-size:12px;padding:10px 4px}.card{padding:15px}.grid,.scanner-layout{grid-template-columns:1fr}.statgrid{gap:7px}.stat{padding:10px}.stat b{font-size:20px}.actions .btn{flex:1}.hero-copy{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="hero">
+  <div class="brand"><div class="logo">⌁</div><div><h1>SmartGate AI</h1><p>سامانه نمایشی مدیریت ورود دانشگاه</p></div></div>
+  <p class="hero-copy">نمونه اولیه برای مسابقه دانشگاهی؛ جست‌وجوی افراد فرضی، ساخت QR موقت و بررسی ورود با اسکنر نگهبان.</p>
+</header>
+<div class="demo-banner"><span>⚠️</span><div><b>فقط نسخه نمایشی (DEMO)</b><br>همه نام‌ها و شناسه‌ها ساختگی‌اند. این نمونه برای کنترل واقعی ورود امن نیست و جایگزین سامانه سروری یا کنترل امنیتی واقعی نمی‌شود.</div></div>
+
+<nav class="tabs" aria-label="بخش‌های برنامه">
+<button class="tab active" data-tab="people">۱. دانشجو / کارمند</button>
+<button class="tab" data-tab="guard">۲. اسکنر نگهبان</button>
+<button class="tab" data-tab="admin">۳. پنل مدیریت</button>
+</nav>
+
+<section id="people" class="panel active">
+<div class="card">
+<h2>جست‌وجوی پرونده نمایشی</h2><p class="sub">نوع فرد را انتخاب کنید و شناسه نمونه را وارد کنید. فقط پرونده فعال می‌تواند QR بگیرد.</p>
+<div class="grid">
+<div class="field"><label for="role">نوع شخص</label><select id="role"><option value="Student">دانشجو</option><option value="Teacher">استاد</option><option value="Employee">کارمند</option></select></div>
+<div class="field"><label for="personId">شناسه فرضی</label><input id="personId" placeholder="مثلاً STU-1001" autocomplete="off" dir="ltr"></div>
+</div>
+<div class="actions"><button id="searchBtn" class="btn primary">جست‌وجوی پرونده</button><button id="clearPerson" class="btn secondary">پاک‌کردن</button></div>
+<div id="personResult" class="result hidden" aria-live="polite"></div>
+<div id="qrCard" class="result hidden">
+<h3>QR موقت نمایشی</h3><p id="qrDetails"></p><div id="qrOutput"></div>
+<div class="actions"><button id="downloadQr" class="btn secondary">ذخیره تصویر QR</button><button id="newQr" class="btn primary">ساخت QR تازه</button></div>
+<p class="small">اعتبار کد ۹۰ ثانیه است و هر کد فقط یک‌بار پذیرفته می‌شود. QR فقط یک توکن تصادفی دارد؛ شناسه به‌تنهایی مجوز ورود نیست.</p>
+</div>
+<div class="small">شناسه‌های آزمایشی: <span dir="ltr">STU-1001</span>، <span dir="ltr">STU-1002</span>، <span dir="ltr">TCH-2001</span>، <span dir="ltr">EMP-3001</span>. برای پرونده غیرفعال از <span dir="ltr">STU-1003</span> استفاده کنید.</div>
+</div>
+</section>
+
+<section id="guard" class="panel">
+<div class="card">
+<h2>بررسی QR توسط نگهبان</h2><p class="sub">دوربین را فعال کنید یا توکن را دستی وارد نمایید. برای اسکن دوربین معمولاً باید سایت روی HTTPS باز شود.</p>
+<div class="scanner-layout">
+<div>
+<div id="reader" class="reader"><div><div style="font-size:34px">▦</div><b>دوربین هنوز فعال نشده است</b><p class="small">برای شروع، دکمه فعال‌کردن دوربین را بزنید.</p></div></div>
+<div class="actions"><button id="startScan" class="btn primary">فعال‌کردن دوربین</button><button id="stopScan" class="btn secondary" disabled>توقف دوربین</button></div>
+</div>
+<div>
+<div class="field"><label for="manualCode">ورود دستی کد / توکن</label><input id="manualCode" placeholder="SG-..." dir="ltr" autocomplete="off"></div>
+<div class="actions"><button id="verifyBtn" class="btn primary">بررسی کد</button></div>
+<div id="scanResult" class="result hidden" aria-live="polite"></div>
+<p class="small">کد QR را فقط در همین نسخه نمایشی و با فهرست فرضی برنامه بررسی کنید.</p>
+</div>
+</div>
+<div class="result warn"><b>میان‌بُرهای آزمایش برای ارائه</b><p class="small">برای نشان‌دادن همه وضعیت‌ها بدون نیاز به دوربین، از کدهای آزمایشی زیر استفاده کنید.</p>
+<div class="demo-codes">
+<button class="demo-code" data-test="EXPIRED-DEMO">EXPIRED-DEMO</button>
+<button class="demo-code" data-test="USED-DEMO">USED-DEMO</button>
+<button class="demo-code" data-test="INVALID-DEMO">INVALID-DEMO</button>
+</div></div>
+</div>
+</section>
+
+<section id="admin" class="panel">
+<div class="card">
+<h2>داشبورد مدیریت</h2><p class="sub">اطلاعات کاملاً ساختگی برای نمایش قابلیت‌ها؛ هیچ داده واقعی در این برنامه وارد نکنید.</p>
+<div class="statgrid"><div class="stat"><b id="countAll">۰</b><span>کل پرونده‌ها</span></div><div class="stat"><b id="countActive">۰</b><span>پرونده فعال</span></div><div class="stat"><b id="countEntries">۰</b><span>رویدادهای ورود</span></div></div>
+<div class="table-wrap"><table><thead><tr><th>شناسه</th><th>نام فرضی</th><th>نقش</th><th>وضعیت</th></tr></thead><tbody id="registryBody"></tbody></table></div>
+</div>
+<div class="card">
+<h2>گزارش رویدادها</h2><p class="sub">نتیجه‌های اسکن و تلاش‌های آزمایشی در این مرورگر ثبت می‌شوند.</p>
+<div class="table-wrap"><table><thead><tr><th>زمان</th><th>کد / شناسه</th><th>نتیجه</th><th>جزئیات</th></tr></thead><tbody id="logBody"></tbody></table></div>
+<div class="actions"><button id="resetBtn" class="btn danger">بازنشانی کامل نسخه نمایشی</button></div>
+<p class="small">بازنشانی، توکن‌ها و گزارش‌ها را پاک می‌کند و داده‌های نمونه را دوباره می‌سازد.</p>
+</div>
+</section>
+<div class="footer">SmartGate AI · نمونه دانشگاهی · اطلاعات ساختگی · نسخه نمایشی محلی</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script>
+(() => {
+'use strict';
+const STORAGE_KEY='smartgate_ai_demo_v1';
+const seedPeople=[
+ {id:'STU-1001',name:'آرمان رضایی',role:'Student',active:true},
+ {id:'STU-1002',name:'سارا احمدی',role:'Student',active:true},
+ {id:'STU-1003',name:'نیما کریمی',role:'Student',active:false},
+ {id:'TCH-2001',name:'دکتر لیلا فرهمند',role:'Teacher',active:true},
+ {id:'TCH-2002',name:'دکتر بهزاد امینی',role:'Teacher',active:false},
+ {id:'EMP-3001',name:'مریم صالحی',role:'Employee',active:true},
+ {id:'EMP-3002',name:'کامران نوری',role:'Employee',active:true}
+];
+const roleFa={Student:'دانشجو',Teacher:'استاد',Employee:'کارمند'};
+let state;
+let currentPerson=null, currentToken=null, scanner=null, scanning=false;
+const $=id=>document.getElementById(id);
+const faNum=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[+d]);
+const now=()=>new Date().toLocaleString('fa-IR',{hour12:false});
+function loadState(){
+ try{const raw=localStorage.getItem(STORAGE_KEY);if(raw){state=JSON.parse(raw);if(state&&Array.isArray(state.people)&&state.tokens&&typeof state.tokens==='object'&&Array.isArray(state.logs))return;}}catch(e){}
+ state={people:seedPeople.map(p=>({...p})),tokens:{},logs:[]};
+ state.tokens['EXPIRED-DEMO']={token:'EXPIRED-DEMO',personId:'STU-1001',expiresAt:Date.now()-60000,used:false};
+ state.tokens['USED-DEMO']={token:'USED-DEMO',personId:'STU-1002',expiresAt:Date.now()+60000,used:true};
+ saveState();
+}
+function saveState(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}}
+function log(code,result,detail){state.logs.unshift({time:now(),code,result,detail});state.logs=state.logs.slice(0,100);saveState();renderAdmin();}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function renderAdmin(){
+ $('countAll').textContent=faNum(state.people.length);
+ $('countActive').textContent=faNum(state.people.filter(p=>p.active).length);
+ $('countEntries').textContent=faNum(state.logs.length);
+ $('registryBody').innerHTML=state.people.map(p=>`<tr><td dir="ltr">${escapeHtml(p.id)}</td><td>${escapeHtml(p.name)}</td><td>${roleFa[p.role]}</td><td><span class="pill ${p.active?'active':'inactive'}">${p.active?'فعال':'غیرفعال'}</span></td></tr>`).join('');
+ $('logBody').innerHTML=state.logs.length?state.logs.map(l=>`<tr><td>${escapeHtml(l.time)}</td><td dir="ltr">${escapeHtml(l.code)}</td><td>${escapeHtml(l.result)}</td><td>${escapeHtml(l.detail)}</td></tr>`).join(''):'<tr><td colspan="4">هنوز رویدادی ثبت نشده است.</td></tr>';
+}
+function showResult(el,kind,title,lines){
+ el.className='result '+kind;
+ el.innerHTML=`<h3>${title}</h3>`+lines.map(x=>`<p>${x}</p>`).join('');
+}
+function findPerson(){const id=$('personId').value.trim().toUpperCase();const role=$('role').value;const p=state.people.find(x=>x.id===id&&x.role===role);currentPerson=null;currentToken=null;$('qrCard').classList.add('hidden');
+ if(!id){showResult($('personResult'),'warn','شناسه را وارد کنید',['لطفاً یک شناسه فرضی وارد نمایید.']);return;}
+ if(!p){showResult($('personResult'),'bad','پرونده پیدا نشد',['شناسه واردشده با نقش انتخابی در فهرست نمایشی وجود ندارد.']);return;}
+ currentPerson=p;
+ if(!p.active){showResult($('personResult'),'bad','پرونده غیرفعال است',[`نام: ${escapeHtml(p.name)}`,`شناسه: <span dir="ltr">${escapeHtml(p.id)}</span>`,'برای پرونده غیرفعال QR صادر نمی‌شود.']);return;}
+ showResult($('personResult'),'good','پرونده فعال پیدا شد',[`نام: ${escapeHtml(p.name)}`,`نقش: ${roleFa[p.role]}`,`شناسه: <span dir="ltr">${escapeHtml(p.id)}</span>`,'اکنون می‌توانید QR موقت نمایشی درخواست کنید.']);
+ makeToken();
+}
+function randomToken(){const bytes=new Uint8Array(18);if(window.crypto&&crypto.getRandomValues)crypto.getRandomValues(bytes);else for(let i=0;i<bytes.length;i++)bytes[i]=Math.floor(Math.random()*256);return 'SG-'+Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('').toUpperCase();}
+function makeToken(){
+ if(!currentPerson||!currentPerson.active)return;
+ const token=randomToken();const expiresAt=Date.now()+90000;
+ state.tokens[token]={token,personId:currentPerson.id,expiresAt,used:false};saveState();currentToken=token;
+ $('qrCard').classList.remove('hidden');$('qrDetails').innerHTML=`ویژه ${escapeHtml(currentPerson.name)} · اعتبار تا ${new Date(expiresAt).toLocaleTimeString('fa-IR')} (۹۰ ثانیه)`;
+ $('qrOutput').innerHTML='';
+ if(window.QRCode){new QRCode($('qrOutput'),{text:token,width:190,height:190,colorDark:'#10243a',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}
+ else $('qrOutput').innerHTML='<p>کتابخانه QR بارگذاری نشد. اتصال اینترنت را بررسی و صفحه را دوباره باز کنید.</p>';
+}
+function verifyCode(raw,source='ورود دستی'){
+ const code=String(raw||'').trim();$('scanResult').classList.remove('hidden');
+ if(!code){showResult($('scanResult'),'warn','کدی وارد نشده است',['کد QR را اسکن یا در کادر وارد کنید.']);return;}
+ if(code==='INVALID-DEMO'){showResult($('scanResult'),'bad','کد نامعتبر است',['این کد در فهرست توکن‌های صادرشده وجود ندارد.']);log(code,'نامعتبر',source);return;}
+ if(code==='EXPIRED-DEMO'){showResult($('scanResult'),'bad','کد منقضی شده است',['مدت اعتبار این کد آزمایشی پایان یافته است.']);log(code,'منقضی',source);return;}
+ if(code==='USED-DEMO'){showResult($('scanResult'),'bad','کد قبلاً استفاده شده است',['توکن آزمایشی از قبل مصرف‌شده است و دوباره پذیرفته نمی‌شود.']);log(code,'تکراری',source);return;}
+ const rec=state.tokens[code];
+ if(!rec){showResult($('scanResult'),'bad','کد نامعتبر است',['توکن در فهرست نمایشی پیدا نشد؛ وجود شناسه به‌تنهایی کافی نیست.']);log(code,'نامعتبر',source);return;}
+ if(rec.used){showResult($('scanResult'),'bad','کد قبلاً استفاده شده است',[`شناسه مرتبط: <span dir="ltr">${escapeHtml(rec.personId)}</span>`,'هر توکن فقط یک بار قابل استفاده است.']);log(code,'تکراری',source);return;}
+ if(Date.now()>rec.expiresAt){showResult($('scanResult'),'bad','کد منقضی شده است',['زمان اعتبار توکن به پایان رسیده است.']);log(code,'منقضی',source);return;}
+ const p=state.people.find(x=>x.id===rec.personId);
+ if(!p||!p.active){showResult($('scanResult'),'bad','ورود رد شد',['پرونده مرتبط وجود ندارد یا غیرفعال شده است.']);log(code,'رد شد','پرونده غیرفعال/ناموجود');return;}
+ rec.used=true;saveState();
+ showResult($('scanResult'),'good','ورود نمایشی تأیید شد',[`نام: ${escapeHtml(p.name)}`,`نقش: ${roleFa[p.role]}`,`شناسه: <span dir="ltr">${escapeHtml(p.id)}</span>`,'توکن مصرف شد؛ استفاده دوباره از آن رد می‌شود.']);
+ log(code,'معتبر — پذیرفته شد',`${p.name} · ${source}`);
+ $('manualCode').value='';
+}
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b===btn));
+ document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===btn.dataset.tab));
+ if(btn.dataset.tab==='admin')renderAdmin();
+}));
+$('searchBtn').addEventListener('click',findPerson);
+$('personId').addEventListener('keydown',e=>{if(e.key==='Enter')findPerson();});
+$('clearPerson').addEventListener('click',()=>{$('personId').value='';$('personResult').classList.add('hidden');$('qrCard').classList.add('hidden');currentPerson=null;currentToken=null;});
+$('newQr').addEventListener('click',makeToken);
+$('downloadQr').addEventListener('click',()=>{
+ const holder=$('qrOutput');const canvas=holder.querySelector('canvas');const img=holder.querySelector('img');let url='';
+ if(canvas)url=canvas.toDataURL('image/png');else if(img)url=img.src;
+ if(!url){alert('تصویر QR هنوز آماده نیست.');return;}
+ const a=document.createElement('a');a.href=url;a.download='SmartGate-demo-QR.png';a.click();
+});
+$('verifyBtn').addEventListener('click',()=>verifyCode($('manualCode').value,'ورود دستی'));
+$('manualCode').addEventListener('keydown',e=>{if(e.key==='Enter')verifyCode($('manualCode').value,'ورود دستی');});
+document.querySelectorAll('[data-test]').forEach(b=>b.addEventListener('click',()=>{$('manualCode').value=b.dataset.test;verifyCode(b.dataset.test,'میان‌بُر آزمایشی');}));
+async function startScanner(){
+ if(!window.Html5Qrcode){showResult($('scanResult'),'bad','اسکنر بارگذاری نشد',['اتصال اینترنت را بررسی کنید. در عوض از ورود دستی کد استفاده کنید.']);return;}
+ try{
+  scanner=new Html5Qrcode('reader');
+  const cameras=await Html5Qrcode.getCameras();
+  if(!cameras||!cameras.length)throw new Error('دوربینی پیدا نشد.');
+  const preferred=cameras.find(c=>/back|rear|environment/i.test(c.label))||cameras[cameras.length-1];
+  await scanner.start(preferred.id,{fps:10,qrbox:{width:230,height:230},aspectRatio:1.0},decoded=>{
+    $('manualCode').value=decoded;verifyCode(decoded,'اسکن دوربین');stopScanner();
+  },()=>{});
+  scanning=true;$('startScan').disabled=true;$('stopScan').disabled=false;
+ }catch(e){showResult($('scanResult'),'bad','دسترسی به دوربین ممکن نشد',[escapeHtml(e.message||'اجازه دوربین داده نشد یا سایت HTTPS نیست.'),'مجوز دوربین را بررسی کنید یا کد را دستی وارد نمایید.']);if(scanner){try{await scanner.clear()}catch(_){}scanner=null;}}
+}
+async function stopScanner(){if(scanner&&scanning){try{await scanner.stop();await scanner.clear()}catch(_){} }else if(scanner){try{await scanner.clear()}catch(_){}}scanner=null;scanning=false;$('startScan').disabled=false;$('stopScan').disabled=true;$('reader').innerHTML='<div><div style="font-size:34px">▦</div><b>دوربین متوقف است</b><p class="small">برای اسکن، دوباره دوربین را فعال کنید.</p></div>';}
+$('startScan').addEventListener('click',startScanner);$('stopScan').addEventListener('click',stopScanner);
+$('resetBtn').addEventListener('click',()=>{
+ if(!confirm('تمام توکن‌ها و گزارش‌های نمایشی پاک و داده‌های نمونه بازسازی شوند؟'))return;
+ try{localStorage.removeItem(STORAGE_KEY)}catch(e){}
+ state={people:seedPeople.map(p=>({...p})),tokens:{},logs:[]};
+ state.tokens['EXPIRED-DEMO']={token:'EXPIRED-DEMO',personId:'STU-1001',expiresAt:Date.now()-60000,used:false};
+ state.tokens['USED-DEMO']={token:'USED-DEMO',personId:'STU-1002',expiresAt:Date.now()+60000,used:true};
+ saveState();currentPerson=null;currentToken=null;$('personResult').classList.add('hidden');$('qrCard').classList.add('hidden');$('scanResult').classList.add('hidden');$('manualCode').value='';renderAdmin();alert('نسخه نمایشی بازنشانی شد.');
+});
+loadState();renderAdmin();
+})();
+</script>
+</body>
+</html>
